@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kryll</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar: Chat Interface -->
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <h2>Kryll</h2>
+            </header>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system">Welcome to Kryll. How can I help you today?</div>
+            </div>
+            <div class="chat-input-container">
+                <textarea id="chat-input" placeholder="Type a message..." rows="1"></textarea>
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Area: Artifact Viewer -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="left-header">
+                    <button id="sidebar-toggle" class="sidebar-toggle">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+                    </button>
+                    <div class="artifact-tabs">
+                        <button class="tab-btn active" data-tab="preview">Preview</button>
+                        <button class="tab-btn" data-tab="code">Code</button>
+                    </div>
+                </div>
+                <button id="copy-btn">Copy</button>
+            </header>
+            <div id="artifact-viewer" class="artifact-viewer">
+                <div id="preview-container" class="tab-content active">
+                    <div class="empty-state">
+                        <p>Generated artifacts will appear here.</p>
+                    </div>
+                </div>
+                <div id="code-container" class="tab-content">
+                    <pre><code id="artifact-code"></code></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
