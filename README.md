@@ -1,9 +1,8 @@
-<<<<<<< HEAD
+
 # Kryll
 
 A sleek, modern, and high-performance AI workspace prototype built with **Python (FastAPI)** and **Vanilla JS/CSS**. This application features a premium "glassmorphic" UI designed to provide a seamless chat experience with integrated "Artifact" generation for code and documents.
 
-![Kryll Preview](https://placehold.co/1200x600/0f1115/e2e8f0?text=Kryll+Preview)
 
 ## ✨ Features
 
@@ -60,4 +59,4 @@ The project follows a clean, decoupled architecture:
 MIT License - feel free to use this project for your own portfolio!
 =======
 # Kryll
->>>>>>> origin/main
+
